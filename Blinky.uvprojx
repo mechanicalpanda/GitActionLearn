@@ -395,6 +395,16 @@
               <FileType>1</FileType>
               <FilePath>.\Blinky.c</FilePath>
             </File>
+            <File>
+              <FileName>AppUser1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\AppCode\AppUser1.c</FilePath>
+            </File>
+            <File>
+              <FileName>AppUser1.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\AppCode\AppUser1.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -877,6 +887,16 @@
               <FileName>Blinky.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Blinky.c</FilePath>
+            </File>
+            <File>
+              <FileName>AppUser1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\AppCode\AppUser1.c</FilePath>
+            </File>
+            <File>
+              <FileName>AppUser1.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\AppCode\AppUser1.h</FilePath>
             </File>
           </Files>
         </Group>

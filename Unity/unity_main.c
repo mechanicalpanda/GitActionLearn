@@ -1,0 +1,30 @@
+#include "unity.h"
+
+#include "unity_main.h"
+#include <stdio.h>
+
+#include "../AppCode/AppUser1.h"
+
+void setUp(void) {
+    // set stuff up here
+}
+
+void tearDown(void) {
+    // clean stuff up here
+}
+
+void test_function_should_doBlahAndBlah(void) {
+    //test stuff
+}
+
+void test_function_should_doAlsoDoBlah(void) {
+    //more test stuff
+}
+
+
+int main(void) 
+{
+    UNITY_BEGIN();
+    TEST_ASSERT_EQUAL_INT(adddata(8, 9), 8+9);
+    return UNITY_END();
+}
