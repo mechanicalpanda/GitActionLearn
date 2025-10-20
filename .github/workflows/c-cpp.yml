@@ -3,7 +3,8 @@ name: Compile and Test C Program
 on:
   push:
     branches:
-      - main
+      - master
+      - develop
   pull_request:
     branches:
       - main
