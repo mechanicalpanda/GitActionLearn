@@ -21,7 +21,7 @@ jobs:
         run: sudo apt-get install -y gcc
       - name: Set up the working directory
         run: |
-        working-directory: ./Unity   
+        working-directory: ../Unity   
       - name: Compile C program
         run: gcc -o my_program Ctest.c
 
