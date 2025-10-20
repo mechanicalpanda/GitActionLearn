@@ -1,3 +1,4 @@
+
 name: Compile and Test C Program
 
 on:
@@ -21,6 +22,7 @@ jobs:
         run: sudo apt-get install -y gcc
       - name: Set up the working directory
         run: |
+        shell: bash
         working-directory: ./Unity   
       - name: Compile C program
         run: gcc -o my_program Ctest.c
