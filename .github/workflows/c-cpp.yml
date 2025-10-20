@@ -1,19 +1,36 @@
-name: C/C++ CI
+name: Compile and Test C Program
 
 on:
   push:
-    branches: [ "master" , "develop"]
+    branches:
+      - main
   pull_request:
-    branches: [ "master" ]
+    branches:
+      - main
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Display event payload
-      run: |
-        echo "Hello World"
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up GCC
+        run: sudo apt-get install -y gcc
+      - name: Set up the working directory
+        run: |
+           cd Unity      
+      - name: Compile C program
+        run: gcc -o my_program Ctest.c
+
+      - name: Run tests
+        run: |
+          if ./my_program; then
+            echo "Test Passed"
+          else
+            echo "Test Failed"
+            exit 1
+          fi
       
  
